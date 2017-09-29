@@ -49,7 +49,7 @@ function ControllerLogicGame(){
 	var firstSelected;
 	var secondSelected;
 	var block = false;
-	var TIME_SLEEP_BETWEEN_INTERVAL = 1000;
+	var TIME_SLEEP_BETWEEN_INTERVAL = 1500;
 	var eventController = this;
 
 	this.addEventListener =  function (eventName, callback){
@@ -92,8 +92,8 @@ function ControllerLogicGame(){
 }
 
 function CardGame (cards , controllerLogicGame,scoreBoard){
-	var LINES = 4;
-	var COLS  = 10;
+	var LINES = 5;
+	var COLS  = 8;
 	this.cards = cards;
 	var logicGame = controllerLogicGame;
 	var scoreBoardGameControl = scoreBoard;
@@ -172,7 +172,7 @@ function BuilderCardGame(){
 		'19.png','19.png',
 		'20.png','20.png'
 		);
-
+		
 	this.doCardGame =  function (){
 		shufflePictures();
 		cards  = buildCardGame();
@@ -211,6 +211,5 @@ function GameControl (){
 GameControl.createGame = function(){
 	var builderCardGame =  new BuilderCardGame();
 	cardGame = builderCardGame.doCardGame();
-	
 	cardGame.show();
 }

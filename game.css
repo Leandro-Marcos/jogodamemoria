@@ -1,24 +1,25 @@
-.main{
-    width:1580;
-    margin:0 auto;
+*{
+	margin: 0;
+	padding: 0;
 }
 
-body { 
-	background-color: #DFDFDF; 
+body{
+	text-align: center;
+}
+.main{
+	width: 1356px;
+	height: 745px;
+	margin: 5px auto;
 }
 
 img {
-	margin : 10 0 0 10;
+	margin : 2 0 0 2;
 }
 
 #score{
-	
-	margin : -10 0 0 500px;
+	margin : 0 0 0 880px;
 	font-size: 25px;
-	text-align: right;
-	margin-right: 40px;
 }
-
 
 .button_game {
     background: -moz-linear-gradient(center top , #EDEDED 5%, #DFDFDF 100%) repeat scroll 0 0 #EDEDED;
