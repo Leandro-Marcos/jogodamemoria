@@ -3,7 +3,7 @@ function ScoreBoardGameControl (){
 	var POINT_GAME = 10;
 	var TEXT_SCORE = "Placar : "
 
-	var TOTAL_CORRECT = 20;
+	var TOTAL_CORRECT = 21;
 	var corrects = 0;
 
 	this.updateScore =  function (){
@@ -92,8 +92,8 @@ function ControllerLogicGame(){
 }
 
 function CardGame (cards , controllerLogicGame,scoreBoard){
-	var LINES = 5;
-	var COLS  = 8;
+	var LINES = 6;
+	var COLS  = 7;
 	this.cards = cards;
 	var logicGame = controllerLogicGame;
 	var scoreBoardGameControl = scoreBoard;
@@ -170,7 +170,8 @@ function BuilderCardGame(){
 		'17.png','17.png',
 		'18.png','18.png',
 		'19.png','19.png',
-		'20.png','20.png'
+		'20.png','20.png',
+		'21.png','21.png'
 		);
 		
 	this.doCardGame =  function (){
