@@ -1,5 +1,5 @@
 (function(){
-	//array que armazenará os objetos com src e id de 1 a 8
+	//array que armazenará os objetos com src e id de 1 a 40
 	var images = [];
 	
 	//imagem a ser exibida em caso de acerto
@@ -11,7 +11,7 @@
 	//array que armazena as cartas viradas
 	var flippedCards = [];
 	
-	//variável contadora de acertos. ao chegar em 8 o jogo termina
+	//variável contadora de acertos,  ao chegar em 20 o jogo termina
 	var matches = 0;
 	
 	//estrutura de atribiução das imagens aos card
@@ -189,3 +189,12 @@
 		},false);
 	}
 }());
+
+/*
+function reiniciaJogo()
+{
+	document.getElementById("reset").innerHTML = location.reload();	
+}
+*/
+
+

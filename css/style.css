@@ -85,3 +85,9 @@ body{
 #imgGameOver{
 	margin-top: 100px;
 }
+
+#reset{
+	position: absolute;
+	top: 0;
+}
+
