@@ -28,7 +28,7 @@ function Card(picture){
 	var FOLDER_IMAGES = 'resources/'
 	var IMAGE_QUESTION  = "question.png"
 	this.picture = picture;
-	this.visible = false;
+	this.visible = true;
 	this.block = false;
 
 	this.equals =  function (cardGame){
@@ -147,6 +147,24 @@ function CardGame (cards , controllerLogicGame,scoreBoard){
 			game.appendChild(br);
 		}
 	}
+	
+			this.viraCarta = function(){
+/* 			var count = 5;
+			while ((count - 1) >= 0){
+				count -= 1;
+				if (count == 0) {
+					count = "fim";
+					}else if(count < 10){
+						count = "0" + count;
+					} */
+			var intervalo = setInterval(function (){cardGame.show()},7000);
+			//}
+			for(var contador = 0; contador < 43; contador++ ){
+			cards[contador].visible = false;
+			}
+			clearInterval(intervalo);
+			
+		};
 }
 
 function BuilderCardGame(){
@@ -213,4 +231,5 @@ GameControl.createGame = function(){
 	var builderCardGame =  new BuilderCardGame();
 	cardGame = builderCardGame.doCardGame();
 	cardGame.show();
+	cardGame.viraCarta();
 }
