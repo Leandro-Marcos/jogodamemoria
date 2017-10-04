@@ -15,7 +15,7 @@ function ScoreBoardGameControl (){
 		corrects++;
 		score+= POINT_GAME;
 		if (corrects ==  TOTAL_CORRECT){
-			alert("Fim de Jogo! Seu Placar foi " + score);
+			alert("Fim de Jogo! Seu Placar foi " + score + " pontos!");
 		}
 	}
 
