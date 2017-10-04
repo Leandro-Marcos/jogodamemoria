@@ -157,7 +157,7 @@ function CardGame (cards , controllerLogicGame,scoreBoard){
 					}else if(count < 10){
 						count = "0" + count;
 					} */
-			var intervalo = setInterval(function (){cardGame.show()},7000);
+			var intervalo = setInterval(function (){cardGame.show()},11000);
 			//}
 			for(var contador = 0; contador < 43; contador++ ){
 			cards[contador].visible = false;
